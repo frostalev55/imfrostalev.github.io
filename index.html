@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrostAlev</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta property="og:title" content="FrostAlev">
+  <meta property="og:description" content="Welcome! I'm Frostalev. I'm excited to collaborate and explore new ventures with you.">
+  <meta property="og:image" content="https://frostalev.tech/Frosty.jpeg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    .ascii-line, .social-media { 
+      visibility: hidden;
+    }
+  </style>
+  <link rel="icon" href="https://frostalev.tech/f.png" type="image/x-icon">
+</head>
+<body>
+<div class="overlay overlay--scanline"></div>
+<div class="overlay overlay--vignette"></div>
+<div id="mobileOverlay"></div>
+<div class="flex-full-justify">
+  <div class="flex-inner">
+    <div class="text-center">
+      <pre id="ascii-art" class="wide-device-text">
+<span class="ascii-line">███████╗██████╗  ██████╗ ███████╗████████╗██╗   ██╗</span>
+<span class="ascii-line">██╔════╝██╔══██╗██╔═══██╗██╔════╝╚══██╔══╝╚██╗ ██╔╝</span>
+<span class="ascii-line">█████╗  ██████╔╝██║   ██║███████╗   ██║    ╚████╔╝ </span>
+<span class="ascii-line">██╔══╝  ██╔══██╗██║   ██║╚════██║   ██║     ╚██╔╝  </span>
+<span class="ascii-line">██║     ██║  ██║╚██████╔╝███████║   ██║      ██║   </span>
+<span class="ascii-line">╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝   </span>
+      </pre>
+      <h1 id="title" style="visibility: hidden;">FrostAlev</h1>
+    </div>
+    <p id="typewriter"></p>
+    <ul id="bulletList" style="display: none;">
+       <li><p id="typewriter2"></p></li>
+    </ul>
+    <br><br>
+    <p class="text-center" id="typewriter3"></p>
+    <br><br><br><br>
+    <div id="socialMedia" class="div-center">
+      <div class="social-media">
+      <a href="https://t.me/FrostAlev" target="_blank" id="TelegramLink">
+        <img src="https://frostalev.tech/tele.png" alt="Telegram" style="height: 50px;">
+      </a>
+      </div>
+      <div class="social-media">
+      <a href="https://discord.com/users/452606383896920064" target="_blank" id="DiscordLink">
+        <img src="https://frostalev.tech/discord.png" alt="Discord" style="height: 50px;">
+      </a>
+      </div>
+      <div class="social-media">
+        <a href="https://www.patreon.com/frostalev" target="_blank" id="PatreonLink">
+          <img src="https://frostalev.tech/patreon.png" alt="Patreon" style="height: 50px;">
+        </a>
+      </div>
+    </div>
+    <div class="text-center hidden">
+      <a href="contact.html" id="contactLink">Contact Me</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  if (isMobile()) {
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    mobileOverlay.style.display = 'block';
+    mobileOverlay.addEventListener('click', function(event) {
+      event.preventDefault();
+      window.location.href = 'contact.html';
+    });
+
+    // Preventing click on Discord and Telegram logos from navigating to contact form
+    const DiscordLink = document.getElementById('DiscordLink');
+    DiscordLink.addEventListener('click', function(event) {
+      event.stopPropagation();
+    });
+    const TelegramLink = document.getElementById('TelegramLink');
+    TelegramLink.addEventListener('click', function(event) {
+      event.stopPropagation();
+    });
+    const PatreonLink = document.getElementById('PatreonLink');
+    PatreonLink.addEventListener('click', function(event) {
+      event.stopPropagation();
+    });
+  } else {
+    document.addEventListener('keydown', function(event) {
+      event.preventDefault();
+      window.location.href = 'contact.html';
+    });
+  }
+
+  // Open Discord and Telegram links in a new tab on both desktop and phone
+  const DiscordLink = document.getElementById('DiscordLink');
+  DiscordLink.setAttribute('target', '_blank');
+  const TelegramLink = document.getElementById('TelegramLink');
+  TelegramLink.setAttribute('target', '_blank');
+  const PatreonLink = document.getElementById('PatreonLink');
+  PatreonLink.setAttribute('target', '_blank');
+
+  // ASCII art and title animation
+  function showASCIIArtAndTitle(callback) {
+    const lines = document.querySelectorAll('.ascii-line');
+    let index = 0;
+    function showNextLine() {
+      if (index < lines.length) {
+        lines[index].style.visibility = 'visible';
+        index++;
+        setTimeout(showNextLine, 100);
+      } else {
+        document.getElementById('title').style.visibility = 'visible';
+        if (callback) setTimeout(callback, 200);
+      }
+    }
+    showNextLine();
+  }
+
+  // Typewriter effect
+  function typeWriter(txt, elementId, speed, callback) {
+    let i = 0;
+    const element = document.getElementById(elementId);
+    function type() {
+      if (i < txt.length) {
+        element.innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      } else if (callback) {
+        setTimeout(callback, 200);
+      }
+    }
+    type();
+  }
+
+  function showSocialMediaIcons() {
+    const socialMediaIcons = document.querySelectorAll('#socialMedia .social-media');
+    socialMediaIcons.forEach((icon, index) => {
+      setTimeout(() => {
+        icon.style.visibility = 'visible';
+      }, index * 100);
+    });
+  }
+
+  // Start the sequence
+  showASCIIArtAndTitle(function() {
+    typeWriter("Welcome! I'm FrostAlev. I'm excited to collaborate and explore new ventures with you.", "typewriter", 50, function() {
+      document.getElementById('bulletList').style.display = 'block';
+      typeWriter("Got a groundbreaking idea or a challenging project? I'm all ears! Let's turn your vision into reality.", "typewriter2", 50, function() {
+        typeWriter("Press any key to get in touch ", "typewriter3", 50, function() {
+          const cursor = document.createElement("span");
+          cursor.className = "blink";
+          cursor.textContent = "_";
+          document.getElementById("typewriter3").appendChild(cursor);
+          showSocialMediaIcons();
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Scans]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://scans.frostalev.tech/scans/system/system.html/</link><image><url>https://scans.frostalev.tech/scans/system/system.html/lib/media/favicon.png</url><title>Scans</title><link>https://scans.frostalev.tech/scans/system/system.html/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 18 Jul 2024 16:24:47 GMT</lastBuildDate><atom:link href="https://scans.frostalev.tech/scans/system/system.html/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 18 Jul 2024 16:24:43 GMT</pubDate><copyright><![CDATA[FrostAlev]]></copyright><ttl>60</ttl><dc:creator>FrostAlev</dc:creator><item><title><![CDATA[Deadline System for Normal Series]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>
+For Translators
+
+<br>Timer starts 6 hours after:
+
+<br>Raw chapter is uploaded.
+<br>Chapter is added to the progress bot.
+<br>Translator is pinged to start.
+
+
+
+
+<br>
+For Other Roles
+
+<br>Timer starts 4 hours after the previous role finishes.<br>
+Example: Proofreader's timer starts 4 hours after the translator completes their work.
+
+
+<br><br><br><br><br><br>
+For chapters significantly longer or shorter than the series average penalties for missing initial deadlines may be waived or added based on chapter length or urgent occurrences.<br>
+Requires admin manager approval
+<br><br><br>The countdown stops when the staff member:<br>
+<br>Finishes their job.
+<br>Uploads files to the drive.
+<br>Updates the progress bot.
+<br>Pings the next assigned member.
+<br><br><br>
+<br>
+Self-Management
+
+<br>Staff should not rely on managers for constant progress checks or pings.
+<br>Be aware of personal deadlines.
+<br>Know who to ping for the next job.
+
+
+<br>
+Using Resources
+
+<br>Utilize the /mention or $si bot functions to identify the correct staff to ping if unsure.
+
+
+<br>
+Issue Resolution
+
+<br>For minor issues causing potential delays, staff should attempt to resolve them independently.
+<br>For major issues resulting in missed deadlines for other staff:
+
+<br>Manager will review the situation.
+<br>Determine responsibility and allocate penalties accordingly.
+<br>Penalties may be split between multiple staff members if applicable.
+
+
+
+
+<br><br><br>
+<br>
+Clear Handoffs
+
+<br>Staff must clearly communicate when their part is complete.
+
+
+<br>
+Progress Tracking
+
+<br>Regularly update the progress bot to maintain transparency.
+<br>Managers should periodically check progress, but not micromanage.
+
+
+<br>
+Issue Reporting
+
+<br>Report any potential delays or issues as soon as they're identified.
+
+
+<br><br><br>
+<br>
+Self-Check
+
+<br>Staff should review their own work before handoff (e.g., Missing Bubbles).
+
+
+<br>
+Feedback Loop
+
+<br>Managers should provide constructive feedback regularly.
+<br>Staff should suggest process improvements if they can.
+
+
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/series/normal-series/deadlines.html</link><guid isPermaLink="false">Scans/System/Series/Normal Series/Deadlines.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:07:53 GMT</pubDate></item><item><title><![CDATA[Normal Series Guidelines]]></title><description><![CDATA[ 
+ <br><br>Normal series chapters will operate under a structured timeline, balancing efficiency with flexibility:<br><br>
+<br>Unlike speed runs, normal series will have defined deadlines, but with significantly larger time windows.
+<br>These extended deadlines ensure chapters are completed within a reasonable timeframe after raw release.
+<br>This approach alleviates the burden on managers, reducing the need for constant staff follow-ups.
+<br><br>
+<br>Staff members are expected to:
+
+<br>Be aware of their series deadlines
+<br>Manage their time effectively to meet these deadlines
+<br>Communicate any potential delays or issues as early as possible
+
+
+<br><br><br>Weekly series will be categorized into two types based on their release frequency and nature:<br><br>
+<br>
+Characteristics:
+
+<br>Regular, highly predictable release schedule
+<br>High priority for timely completion
+
+
+<br>
+Staff Expectations:
+
+<br>Proactively check for raw delivery on the expected release day
+<br>Begin work as soon as they can upon raw availability
+
+
+<br>
+Manager Responsibilities:
+
+<br>Ensure staff are notified promptly when raws are available
+<br>Coordinate the workflow to maintain efficiency
+
+
+<br><br>
+<br>
+Characteristics:
+
+<br>Irregular or unpredictable release schedule
+<br>Lower priority or "as-needed" basis
+
+
+<br>
+Staff Expectations:
+
+<br>Work on chapters only when explicitly instructed by the manager
+<br>Maintain readiness to begin work when notified
+
+
+<br>
+Manager Responsibilities:
+
+<br>Determine which chapters need to be completed
+<br>Provide clear instructions to staff on which chapters to prioritize
+<br>Manage overall workflow to balance idle series with active projects
+
+
+<br><br>
+By adhering to these guidelines, we aim to streamline our series management process, improve efficiency, and maintain high-quality output across all our projects.
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/series/normal-series/normal-series-guidelines.html</link><guid isPermaLink="false">Scans/System/Series/Normal Series/Normal Series Guidelines.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:09:13 GMT</pubDate></item><item><title><![CDATA[Deadline System for Speed Runs]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>
+For Translators
+
+<br>Timer starts immediately when:
+
+<br>Raw chapter is uploaded.
+<br>Chapter is added to the progress bot.
+<br>Translator is pinged to start.
+
+
+
+
+<br>
+For Other Roles
+
+<br>Timer starts as soon as the previous role finishes<br>
+Example: Proofreader's timer starts immediately after the translator completes their work.
+
+
+<br>
+**Flexible Time Speed Runs
+
+<br>Translators may be given a 1-2 hour head start if raws are late.
+<br>Other roles do not receive this head start.
+
+
+<br><br><br><br><br><br>
+For chapters significantly longer or shorter than the series average penalties for missing initial deadlines may be waived or added based on completion time relative to competing teams.<br>
+Requires admin manager approval
+<br><br><br>The countdown stops when the staff member:<br>
+<br>Finishes their job.
+<br>Uploads files to the drive.
+<br>Updates the progress bot.
+<br>Pings the next assigned member.
+<br><br><br>
+<br>
+Self-Management
+
+<br>Speed run staff should not rely on managers for constant progress checks or pings.
+<br>Be aware of personal deadlines.
+<br>Know who to ping for the next job.
+
+
+<br>
+Using Resources
+
+<br>Utilize the /mention or $si bot functions to identify the correct staff to ping if unsure.
+
+
+<br>
+Issue Resolution
+
+<br>For minor issues causing potential delays, staff should attempt to resolve them independently.
+<br>For major issues resulting in missed deadlines for other staff:
+
+<br>Manager will review the situation.
+<br>Determine responsibility and allocate penalties accordingly.
+<br>Penalties may be split between multiple staff members if applicable.
+
+
+
+
+<br><br><br>
+<br>
+Clear Handoffs
+
+<br>Staff must clearly communicate when their part is complete.
+
+
+<br>
+Progress Tracking
+
+<br>Regularly update the progress bot to maintain transparency.
+<br>Managers should periodically check progress, but not micromanage.
+
+
+<br>
+Issue Reporting
+
+<br>Report any potential delays or issues as soon as they're identified.
+
+
+<br><br><br>
+<br>
+Self-Check
+
+<br>Staff should review their own work before handoff (e.g., Missing Bubbles).
+
+
+<br>
+Feedback Loop
+
+<br>Managers should provide constructive feedback regularly.
+<br>Staff should suggest process improvements if they can.
+
+
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/series/speed-run-series/deadlines.html</link><guid isPermaLink="false">Scans/System/Series/Speed Run Series/Deadlines.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Thu, 18 Jul 2024 15:27:29 GMT</pubDate></item><item><title><![CDATA[Staff Assignment]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>
+Team Structure
+
+<br>Each series will have two dedicated teams.
+<br>Staff members will be part of one of these teams, not just individual contributors.
+<br>Teams are expected to collaborate on all aspects of the series.
+
+
+<br>
+Main and Secondary Teams
+
+<br>One team serves as the main staff.
+<br>The other team acts as secondary support.
+<br>Secondary team members step in if main staff are unavailable or on hiatus.
+
+
+<br>
+Availability Requirements
+
+<br>Both teams must be available around the scheduled speed run time.
+<br>Main team has higher priority for availability.
+
+
+<br>
+Absence Reporting
+
+<br>Staff must report expected absences at least 4 hours before SR time.
+<br>Failure to report results in a penalty.
+<br>Advance notice allows secondary team to prepare and step in.
+
+
+<br>
+Penalty System
+
+<br>Unannounced absence results in a warning.
+<br>Two warnings lead to removal from the series.
+<br>Staff can appeal warnings with valid reasons.
+<br>Admins may waive penalties for acceptable reasons.
+
+
+<br><br><br><br>
+<br>Characteristics:
+
+<br>90% of raws delivered within 20 minutes of Korean release time.
+<br>Strict adherence to deadlines.
+<br>Stricter enforcement of absence notice rule.
+<br>More lenient absence notice rule if raws drop past 2-hour window.
+
+
+<br><br>
+<br>Characteristics:
+
+<br>Inconsistent raw delivery times.
+<br>More leeway in deadline schedule.
+
+
+<br><br><br>
+<br>
+Late Completion Penalties
+
+<br>Speed run bonus points deducted if deadline is missed.
+<br>Additional 30 minutes granted to complete the chapter.
+<br>Half of chapter points deducted if late beyond extra 30 minutes.
+
+
+<br>
+Multiple Series Handling
+
+<br>If two assigned series release simultaneously, second series goes to assistance team.
+
+
+<br>
+Quality Control
+
+<br>30-minute window to correct errors in translation, proofreading, or editing.
+<br>Two points deducted for uncorrected mistakes.
+<br>Half of chapter points deducted if same mistake occurs more than three times.
+
+
+<br><br><br>
+<br>
+Staff Selection
+
+<br>Specific staff chosen based on <a data-href="Staff Levels" href="https://scans.frostalev.tech/scans/system/system.html/scans/system/staff/staff-levels.html" class="internal-link" target="_self" rel="noopener">Staff Levels</a> evaluation.
+<br>Custom deadlines set for batch releases.
+
+
+<br>
+Organization
+
+<br>Discord roles (RRF_x) assigned to chosen staff.
+<br>Staff categorized based on availability and time zones.
+
+
+<br>
+Rules Application
+
+<br>Staff cooperation and deadline rules apply similarly to weekly speed runs.
+<br>Adjustments made for on-time or late raw deliveries.
+
+
+<br><br><br>
+<br>
+Communication
+
+<br>Use dedicated threads for each chapter.
+<br>Regular updates on progress and potential issues.
+
+
+<br>
+Flexibility
+
+<br>Managers should be prepared to adjust teams or deadlines as needed.
+<br>Regular reassessment of series categorization (Fixed Time or Flexible Time).
+
+
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/series/speed-run-series/speed-runs-guidelines.html</link><guid isPermaLink="false">Scans/System/Series/Speed Run Series/Speed Runs Guidelines.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:26:47 GMT</pubDate></item><item><title><![CDATA[Series Claiming System]]></title><description><![CDATA[ 
+ <br><br>
+<br>Staff earn points for completing regular chapters while meeting deadlines:
+
+<br>Regular chapter: 10 points
+<br>Speed run chapter: 15 points
+<br>Booting chapter: 20 points
+<br>Substitution chapter: 25 points
+
+
+<br>Example scenario:<br>Regular chapter completed on time: 10 points
+Speed run participation (2 chapters): 30 points
+Batch release contribution (5 chapters): 100 points
+Substitution chapter completed on time: 25 points
+Total: 165 points
+Copy<br><br>
+<br>Skill-based multipliers apply to point earnings:
+
+<br>Novice level: 1.0x (base points)
+<br>Intermediate level: 1.2x
+<br>Advanced level: 1.5x
+<br>Expert level: 1.8x
+<br>Master level: 2.0x
+
+
+<br>Example Scenario:<br>Scenario: Completing a regular chapter (10 base points)
+
+Novice Translator: 10 × 1.0 = 10 points
+Intermediate Cleaner: 10 × 1.2 = 12 points
+Advanced Editor: 10 × 1.5 = 15 points
+Expert Proofreader: 10 × 1.8 = 18 points
+Master Project Manager: 10 × 2.0 = 20 points
+Copy<br>
+Skill levels are determined through a combination of experience, consistency of high-quality work, and periodic skill assessments. Staff members can progress through levels over time.
+<br><br>
+<br>Point decay:
+
+<br>All points gradually decrease over time to maintain a dynamic point economy.
+<br>Active members: 2% of total points decay per week.
+<br>Inactive members: 10% of total points decay per week.
+<br>Inactivity is defined as no point-earning actions for 7 consecutive days.
+<br>Minimum point balance is maintained at 50 points (no decay below this threshold).
+
+
+<br>Example scenarios:<br>Scenario 1: Consistent activity
+Staff member A starts with 1000 points and remains active:
+Week 0: 1000 points
+Week 1: 980 points (2% decay: 1000 - 20)
+Week 2: 960 points (2% decay: 980 - 20)
+Week 3: 941 points (2% decay: 960 - 19)
+
+Scenario 2: Inactivity
+Staff member B starts with 1000 points and becomes inactive:
+Week 0: 1000 points
+Week 1: 900 points (10% decay: 1000 - 100)
+Week 2: 810 points (10% decay: 900 - 90)
+Week 3: 729 points (10% decay: 810 - 81)
+
+Scenario 3: Mixed activity
+Staff member C starts with 1000 points:
+Week 0: 1000 points
+Week 1: 980 points (active, 2% decay: 1000 - 20)
+Week 2: 882 points (inactive, 10% decay: 980 - 98)
+Week 3: 864 points (active again, 2% decay: 882 - 18)
+
+Scenario 4: Minimum balance protection
+Staff member E has 120 points and is inactive:
+Week 0: 120 points
+Week 1: 108 points (10% decay: 120 - 12)
+Week 2: 97 points (10% decay: 108 - 11)
+Week 3: 87 points (10% decay: 97 - 10)
+Week 4: 78 points (10% decay: 87 - 9)
+Week 5: 70 points (10% decay: 78 - 8)
+Week 6: 63 points (10% decay: 70 - 7)
+Week 7: 57 points (10% decay: 63 - 6)
+Week 8: 51 points (10% decay: 57 - 6)
+Week 9: 50 points (minimum balance reached, no further decay)
+Copy<br>
+This accelerated decay system encourages both regular participation and point utilization. Staff can slow down their point decay by remaining active and can protect points by using them for series claims. The system ensures a more dynamic point economy while still allowing members to accumulate points for larger bids.
+<br><br><br>
+<br>Auction-style bidding using merit points
+
+<br>Auctions are held after booting for new series.
+<br>Auctions are held when needed for unclaimed series.
+<br>Each auction lasts for 48 hours.
+<br>Minimum bid is 100 points, may be higher for popular titles.
+<br>Bids are placed in increments of 50 points.
+<br>Highest bidder at the end of the auction claims the series.
+<br>In case of a tie, the earlier bid wins.
+<br>10% of the winning bid is deducted as a "transaction fee" to maintain point economy.
+
+
+<br>Example auction process:<br>Series: "Caffiene"
+Minimum bid: 200 points
+Duration: 48 hours
+
+Bidding history:
+Hour 01: Staff A bids 200 points
+Hour 05: Staff B bids 250 points
+Hour 12: Staff C bids 350 points
+Hour 24: Staff A bids 400 points
+Hour 36: Staff B bids 450 points
+Hour 47: Staff C bids 500 points
+
+Result: 
+Winner: Staff C with 500 points
+Points deducted from Staff C: 550 points (500 bid + 50 transaction fee)
+Staff A and B have their bids fully refunded
+Copy<br>
+Staff can set up auto-bidding with a maximum limit to avoid constantly monitoring the auction.
+<br><br>
+<br>Tiered bidding system:
+
+<br>Series are categorized into five tiers based on popularity, complexity, and workload
+<br>Higher tier series require larger minimum bids and have higher point rewards per chapter
+
+
+<br>Tier system breakdown:<br><br>Factors determining tier placement:<br>
+<br>Popularity: Based on reader statistics, social media engagement, and community recognition.
+<br>Complexity: refer to <a data-href="Series Levels" href="https://scans.frostalev.tech/scans/system/system.html/scans/system/series/series-levels.html" class="internal-link" target="_self" rel="noopener">Series Levels</a>.
+<br>
+
+<br>Tier assignments are reviewed quarterly and may be adjusted based on changes in popularity or complexity.
+<br>Staff can suggest tier reassessments with supporting evidence.
+<br>New series are initially placed in tier C unless they have significant pre-existing popularity or complexity.
+
+<br><br>
+<br>Claiming window for other staff series opens every three months.
+<br><br>
+<br>Safe series allocation:
+
+<br>Based on staff skill level and recent performance
+<br>Managers have a higher number of safe series
+<br>Safe series are protected from auctions and point decay
+<br>Allocation reviewed quarterly by admin team
+<br>Maximum of 4 safe series for regular staff, 5 for masters and managers exceptions.
+<br>Staff must maintain minimum activity levels to keep safe series status
+
+
+<br>Example safe series distribution:<br>Novice staff: 0-1 safe series
+Intermediate staff: 1-2 safe series
+Advanced staff: 2-3 safe series
+Expert staff: 3-4 safe series
+Master staff: 4-5 safe series
+Copy<br><br>
+<br>Series exchange market:
+
+<br>Between auctions, staff can trade series with or without point exchanges.
+<br>Trades must be approved by a manager to ensure fairness and maintain quality.
+<br>Point exchanges in trades are subject to a 5% transaction fee.
+<br>Staff can list series they're willing to trade in the internal marketplace.
+<br>Safe series cannot be traded unless a staff member voluntarily gives up the safe status.
+<br>A cooldown period of 30 days applies before newly acquired series can be traded again.
+
+
+<br>Example trades:<br>1. Direct swap: 
+   Staff A trades "Manhwa X" for Staff B's "Manhwa Y" (no points involved)
+
+2. Points + Series trade:
+   Staff C trades "Manhwa Z" + 300 points to Staff D for "Popular Manhwa W"
+   (Staff C pays 315 points due to 5% transaction fee)
+Copy<br>
+This will allow staff to better match the series they like and cooldown tension between them.
+<br><br><br>
+<br>
+Transparent point tracking system using the points bot:
+
+<br>Real-time updates of point balances and series ownership.
+
+
+<br>
+Feedback mechanism:
+
+<br>Regular staff surveys to gather input on system improvements
+
+
+<br>
+Regular system reviews:
+
+<br>Regular assessment and adjustment of point values and rules
+
+
+<br>
+Dispute resolution process:
+
+<br>Staff should try solving their dispute first, if it escalates, the manager will get involved, if one the two parties disagree, and admin will review the whole situation and force their judgment.
+
+
+<br><br><br>Staff Member: FrostAlev
+Role: Editor
+Skill Level: Expert
+
+Merit Points Earned (Last Two Months):
+Base Points:
+- Completed Chapters: 350 points
+- Speedrun Participation: 600 points
+- Batch Release Contribution: 300 points
+- Substitution Chapters: 400
+
+Bonuses:
+- Skill Multiplier (1.5x): 825 points
+
+Total Merit Points Earned: 2,475
+
+Point Decay Calculation (8 weeks):
+Initial Balance: 2,475 points
+Week 1: 2,425 points (2% decay: 2,475 - 50)
+Week 2: 2,377 points (2% decay: 2,425 - 48)
+Week 3: 2,329 points (2% decay: 2,377 - 48)
+Week 4: 2,282 points (2% decay: 2,329 - 47)
+Week 5: 2,054 points (10% decay due to inactivity: 2,282 - 228)
+Week 6: 1,849 points (10% decay, still inactive: 2,054 - 205)
+Week 7: 1,664 points (10% decay, still inactive: 1,849 - 185)
+Week 8: 1,631 points (2% decay, active again: 1,664 - 33)
+
+Current Balance: 1,631 points
+
+Current Series Owned:
+- "Manhwa A" (Safe Series)
+- "Manhwa B" (Safe Series)
+- "Manhwa C" (Safe Series)
+- "Manhwa D" (Safe Series)
+- "Manhwa E" (Claimable)
+- "Manhwa F" (Claimable)
+
+Safe Series Count: 4
+
+Note:
+- FrostAlev was active for the first four weeks, then inactive for three weeks (Weeks 5-7), before becoming active again in Week 8.
+
+- The extended period of inactivity resulted in a significant point loss due to the higher 10% decay rate for inactive members.
+
+- This demonstrates how prolonged inactivity can substantially impact a staff member's point balance.
+
+- Despite this, FrostAlev's expert status and initial high activity level have helped maintain a still considerable point balance, though it's notably lower than the starting amount.
+Copy<br>
+This system is designed to be dynamic and adaptable. Regular reviews and adjustments based on team feedback and series needs ensure it continues to motivate staff and improve overall scanlation quality and efficiency.
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/series/series-claiming-system.html</link><guid isPermaLink="false">Scans/System/Series/Series Claiming System.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:38:44 GMT</pubDate></item><item><title><![CDATA[Series Levels]]></title><description><![CDATA[ 
+ <br>
+Each series will have a designated difficulty level for each role. These levels will be determined based on various metrics -SEE BELOW-. This will directly affect the time windows and the pay rate, either by increasing or decreasing them more accurately based on the series' complexity.
+<br><br><br>Check last five chapters of the series for the following:<br>
+<br>Words Count.
+<br>Language Complexity
+<br>Cultural References 
+<br>Evaluate the level as follows:<br>
+<br>Initial Translation Level 
+<br>Each +200 words &gt; Translation Level 
+<br>If the series narrative is complex &gt; Translation Level 
+<br>If the series mentions cultural references often &gt; Translation Level 
+<br><br>#Last five chapters bubbles count:&nbsp;Chapter1 = 725 → 725Chapter2 = 645 → 645Chapter3 = 734 → 734Chapter4 = 493 → 493Chapter5 = 689 → 689&nbsp;SUM = Chapter1 + Chapter2 + Chapter3 + Chapter4 + Chapter5 → 3,286AVG = SUM / 5 → 657.2&nbsp;WordsCountLevel = floor(AVG / 200) → 3&nbsp;InitialSeriesLevel = 0 → 0&nbsp;CurrentSeriesLevel = InitialSeriesLevel + WordsCountLevel → 3<br>and this series narrative is complex but it doesn't mentions cultural references often...<br>
+so  for Language Complexity and nothing for Cultural References.<br>CurrentSeriesLevel = 3 → 3LanguageComplexity = 1 → 1CulturalReferences = 0 → 0&nbsp;FinalSeriesLevel = CurrentSeriesLevel + LanguageComplexity + CulturalReferences → 4<br>Hence the Translation Level for the given series is <br><br><br>Proofreading Level is the same level as the translation.<br><br><br>Check last five chapters of the series for the following:<br>
+<br>Bubbles Count.
+<br>System or Frequent use of Phones and Windows
+<br>**Styled Moans | SFX
+<br>Transparent Bubbles
+<br>Redrawing
+<br>Evaluate the level as follows:<br>
+<br>Initial Cleaning Level 
+<br>Each +60 Bubbles &gt; Cleaning Level 
+<br>If the series has system or uses phones/computers frequently:
+
+<br>if the system is simple &gt; Cleaning Level 
+<br>if the system is advanced &gt; Cleaning Level 
+
+
+<br>If the series has styled moans | SFX:
+
+<br>if the styled moans | SFX are few &gt; Cleaning Level 
+<br>if the styled moans | SFX are many &gt; Cleaning Level 
+
+
+<br>If the series has transparent bubbles:
+
+<br>if the transparent bubbles are few &gt; Cleaning Level 
+<br>if the transparent bubbles are many &gt; Cleaning Level 
+
+
+<br>If the series needs redrawing:
+
+<br>if the redrawing can be done using PS's Content Aware Fill &gt; Cleaning Level 
+<br>if the redrawing requires manual drawings &gt; Cleaning Level 
+
+
+<br>*Few &lt; 20% of Bubbles &lt; Many<br><br>#Last five chapters bubbles count:&nbsp;Chapter1 = 126 → 126Chapter2 = 152 → 152Chapter3 = 149 → 149Chapter4 = 132 → 132Chapter5 = 97 → 97&nbsp;SUM = Chapter1 + Chapter2 + Chapter3 + Chapter4 + Chapter5 → 656AVG = SUM / 5 → 131.2&nbsp;WordsCountLevel = floor(AVG / 60) → 2&nbsp;InitialSeriesLevel = 0 → 0&nbsp;CurrentSeriesLevel = InitialSeriesLevel + WordsCountLevel → 2<br>and this series has an advanced system and few styled moans and it has out of bubbles text over panels but it can me done using Content Aware Fill...<br>
+so  for Advanced System and  for few Styled Moans and  for Redrawing that can be done using CAF and nothing for Transparent Bubbles.<br>CurrentSeriesLevel = 2 → 2System = 2 → 2Moans = 1 → 1TransparentBubbles = 0 → 0Redrawing = 1 → 1&nbsp;FinalSeriesLevel = CurrentSeriesLevel + System + Moans + TransparentBubbles + Redrawing → 6<br>Hence the Cleaning level for the given series is <br><br><br>Check last five chapters of the series for the following:<br>
+<br>Bubbles Count.
+<br>System or Frequent use of Phones and Windows
+<br>Styled Moans | SFX
+<br>Evaluate the level as follows:<br>
+<br>Initial Typesetting Level 
+<br>Each +30 Bubbles &gt; Typesetting Level 
+<br>If the series has system or uses phones/computers frequently:
+
+<br>if the few system windows &gt; Typesetting Level 
+<br>if the many system windows &gt; Typesetting Level 
+<br>if the many warped system windows &gt; Typesetting Level 
+
+
+<br>If the series has styled moans | SFX:
+
+<br>if the styled moans | SFX are few &gt; Typesetting Level 
+<br>if the styled moans | SFX are many &gt; Typesetting Level 
+
+
+<br>*Few &lt; 20% of Bubbles &lt; Many<br><br>#Last five chapters bubbles count:&nbsp;Chapter1 = 126 → 126Chapter2 = 152 → 152Chapter3 = 149 → 149Chapter4 = 132 → 132Chapter5 = 97 → 97&nbsp;SUM = Chapter1 + Chapter2 + Chapter3 + Chapter4 + Chapter5 → 656AVG = SUM / 5 → 131.2&nbsp;WordsCountLevel = floor(AVG / 30) → 4&nbsp;InitialSeriesLevel = 0 → 0&nbsp;CurrentSeriesLevel = InitialSeriesLevel + WordsCountLevel → 4<br>and this series has an advanced system but not warped and few styled moans and it has out of bubbles text over panels...<br>
+so  for Advanced System and  for few Styled Moans.<br>CurrentSeriesLevel = 4 → 4System = 1 → 1Moans = 1 → 1&nbsp;FinalSeriesLevel = CurrentSeriesLevel + System + Moans → 6<br>Hence the Typesetting level for the given series is <br><br><br>Quality Checking Level is the average of all the other levels.<br><br>TranslationLevel = 4 → 4ProofreadingLevel = 4 → 4CleaningLevel = 6 → 6TypesettingLevel = 6 → 6&nbsp;QualityCheckingLevel = round((TranslationLevel + ProofreadingLevel + CleaningLevel + TypesettingLevel) / 4) → 5<br>Hence the Quality Checking Level for the given series is <br><br>
+Staff can ask for their series to be reevaluated but they can ask for reevaluation once every 10 chapters, and then the respective role head will check the last five chapters and apply the rules above.
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/series/series-levels.html</link><guid isPermaLink="false">Scans/System/Series/Series Levels.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:25:17 GMT</pubDate></item><item><title><![CDATA[Workflow]]></title><description><![CDATA[ 
+ LezhinOkToonNewToki<br>Use <a data-tooltip-position="top" aria-label="https://github.com/nagadomi/waifu2x" rel="noopener" class="external-link" href="https://github.com/nagadomi/waifu2x" target="_blank">waifu2x</a> to denoise the images with the following settings:<br>
+<br>Output extension: PNG
+<br>Output quality 100
+<br>Conversion Mode: Denoise only
+<br>Denoise: Level 3
+<br>Model: 2D illustration (CUnet Model)
+<br>Device:<br>
+GPU ID: 0<br>
+Threads: 2
+<br>Use <a data-tooltip-position="top" aria-label="https://github.com/MechTechnology/SmartStitch" rel="noopener" class="external-link" href="https://github.com/MechTechnology/SmartStitch" target="_blank">SmartStitch</a> to crop the images into the correct dimensions with the following settings:<br>
+<br>Output File Type: PNG
+<br>Rough Output Height: 25000
+<br>Width Enforcement Type: No Enforcement
+<br>Use Photoshop &gt; Image &gt; Canvas Size with the following settings:<br>
+<br>Width: 720 Pixels for 720px series
+<br>Width: 1080 Pixels for 1080px series
+<br>Uncheck: Relative
+<br>to crop the empty space at the sides out.<br>Send a message in the channel <a data-tooltip-position="top" aria-label="https://discord.com/channels/1049169739211096114/1093262230860071004" rel="noopener" class="external-link" href="https://discord.com/channels/1049169739211096114/1093262230860071004" target="_blank">💰-raws</a>) in the following format:<br>
+<br>{#channel-mention} / {chapter-number} / raw
+<br>to update the Progress of the series.<br>Use the tools <a data-tooltip-position="top" aria-label="https://drive.google.com/drive/folders/1TuQEn7VAh_N6fvD3DQdamO56zpECPJKb?usp=drive_link" rel="noopener" class="external-link" href="https://drive.google.com/drive/folders/1TuQEn7VAh_N6fvD3DQdamO56zpECPJKb?usp=drive_link" target="_blank">here</a> to clean the watermarks of the images<br>Use <a data-tooltip-position="top" aria-label="https://github.com/MechTechnology/SmartStitch" rel="noopener" class="external-link" href="https://github.com/MechTechnology/SmartStitch" target="_blank">SmartStitch</a> to crop the images into the correct dimensions with the following settings:<br>
+<br>Output File Type: PNG
+<br>Rough Output Height: 25000
+<br>Width Enforcement Type: No Enforcement
+<br>Zip the output, name it following the format (Chapter 00) upload it to the Raw Folder in the link pinned in the series Discord channel pins.<br>Search for series Korean name.<br>Open chapters in individual tabs.<br>Use the extension <a data-tooltip-position="top" aria-label="https://chromewebstore.google.com/detail/fdpohaocaechififmbbbbbknoalclacl" rel="noopener" class="external-link" href="https://chromewebstore.google.com/detail/fdpohaocaechififmbbbbbknoalclacl" target="_blank">GoFullPage</a> to capture the chapter. and download it as PNG.<br>Use Photoshop Crop tool to crop the Lezhin intro and outro from the first and last images in the chapter.<br>Zip the output, name it following the format (Chapter 00) upload it to the Raw Folder in the link pinned in the series Discord channel pins.<br>Use <a data-tooltip-position="top" aria-label="https://github.com/nagadomi/waifu2x" rel="noopener" class="external-link" href="https://github.com/nagadomi/waifu2x" target="_blank">waifu2x</a> to denoise the images with the following settings:<br>
+<br>Output extension: PNG
+<br>Output quality 100
+<br>Conversion Mode: Denoise only
+<br>Denoise: Level 3
+<br>Model: 2D illustration (CUnet Model)
+<br>Device:<br>
+GPU ID: 0<br>
+Threads: 2
+<br>Go to https://newtoki{xxx}.com/.<br>Search for series Korean name.<br>Open chapters in individual tabs.<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/newtoki.png" draggable="false">NewToki.png<br>Go to <a data-tooltip-position="top" aria-label="https://oktoon.com/" rel="noopener" class="external-link" href="https://oktoon.com/" target="_blank">OkToon</a> and toggle the 19 switch.<br>Search for series Korean name.<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/oktoon.jpg" draggable="false">OkToon.jpg<br>Use the extension <a data-tooltip-position="top" aria-label="https://github.com/eight04/image-picka" rel="noopener" class="external-link" href="https://github.com/eight04/image-picka" target="_blank">Image Picka</a> with the following settings:<br>
+<br>Width: 720
+<br>Height: 20
+<br>Include URL:<br>
+https://img1.newtoki21.org/data/file/webtoon/{series_id}
+<br>Filename pattern:<br>
+Image Picka/${pageTitle}/${String(index).padStart(2, "0")} - ${name}${ext}
+<br>Open chapters in individual tabs.<br>Use <a data-tooltip-position="top" aria-label="https://github.com/MechTechnology/SmartStitch" rel="noopener" class="external-link" href="https://github.com/MechTechnology/SmartStitch" target="_blank">SmartStitch</a> to crop the images into the correct dimensions with the following settings:<br>
+<br>Output File Type: PNG
+<br>Rough Output Height: 25000
+<br>Width Enforcement Type: No Enforcement
+<br>Zip the output, name it following the format (Chapter 00) upload it to the Raw Folder in the link pinned in the series Discord channel pins.<br>Use the tools <a data-tooltip-position="top" aria-label="https://drive.google.com/drive/folders/1TuQEn7VAh_N6fvD3DQdamO56zpECPJKb?usp=drive_link" rel="noopener" class="external-link" href="https://drive.google.com/drive/folders/1TuQEn7VAh_N6fvD3DQdamO56zpECPJKb?usp=drive_link" target="_blank">here</a> to clean the watermarks of the images<br>Use the extension <a data-tooltip-position="top" aria-label="https://github.com/eight04/image-picka" rel="noopener" class="external-link" href="https://github.com/eight04/image-picka" target="_blank">Image Picka</a> with the following settings:<br>
+<br>Width: 720
+<br>Height: 20
+<br>Include URL:<br>
+https://img1.newtoki21.org/data/file/webtoon/{series_id}
+<br>Filename pattern:<br>
+Image Picka/${pageTitle}/${String(index).padStart(2, "0")} - ${name}${ext}
+<br>Go to <a data-tooltip-position="top" aria-label="https://www.lezhin.com/ko" rel="noopener" class="external-link" href="https://www.lezhin.com/ko" target="_blank">lezhin.com</a> and toggle the<br>
+19 switch.<br>Use <a data-tooltip-position="top" aria-label="https://github.com/nagadomi/waifu2x" rel="noopener" class="external-link" href="https://github.com/nagadomi/waifu2x" target="_blank">waifu2x</a> to denoise the images with the following settings:<br>
+<br>Output extension: PNG
+<br>Output quality 100
+<br>Conversion Mode: Denoise only
+<br>Denoise: Level 3
+<br>Model: 2D illustration (CUnet Model)
+<br>Device:<br>
+GPU ID: 0<br>
+Threads: 2
+<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/lezhin.png" draggable="false">Lezhin.png]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/staff/roles/raw-provider/workflow.html</link><guid isPermaLink="false">Scans/System/Staff/Roles/Raw Provider/Workflow.canvas</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Tue, 16 Jul 2024 19:38:12 GMT</pubDate><enclosure url="https://scans.frostalev.tech/scans/system/system.html/lib/media/newtoki.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;https://scans.frostalev.tech/scans/system/system.html/lib/media/newtoki.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Workflow]]></title><description><![CDATA[ 
+ BubblesGeneral NotesMultiple BubblesOut Of Bubbles TextThoughtsNarrationPhonesSpeechShouting<br>Access the Chapter raw from the Raw folder in the drive link pinned in the series Discord channel pins.<br>Use your typing application of choice and translate the text in the chapter with the following guidelines in mind:<br>For Narration Boxes, you can use the Square Brackets: []<br>
+with not space between as a legend followed by a Colon.<br>Example:<br>
+[]: This is a Narration Bubble.<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/narration.png" draggable="false">Narration.png<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/thoughts.png" draggable="false">Thoughts.png<br>For Normal Speech Bubbles, please use the normal Double Quotes: ""<br>
+as a legend followed by a Colon.<br>Example:<br>
+"": This is a Normal Speech Bubble.<br>For Shouting Bubbles, you can use the normal Double Quotes: ""<br>
+as a legend followed by a Colon.<br>Example:<br>
+"": This is a Shouting Bubble.<br>Don't leave extra empty lines between bubbles only one empty line between each bubble.<br>
+Example:<br>
+"": This is the first bubble in the chapter.<br>"": this is the second bubble in the chapter.<br>Don't leave any empty lines between Double/Triple Bubbles.<br>
+Example:<br>
+"": This is the first bubble in the chapter.<br>"": this is the second bubble in the chapter.<br>
+//: this is an attached bubble to the second bubble.<br>"": This is the fourth bubble in the chapter.<br>For things like Page Numbers and Title TBC, please make them All Caps and use Double Hash: ##<br>
+as a legend.<br>
+Example:<br>
+## PAGE 1<br>## TITLE<br>"": This is the first bubble in the chapter.<br>## PAGE 2<br>"": This is the second bubble in the chapter.<br>## TBC<br>Use Asterisks: *<br>
+for emphasized text within speech bubbles.<br>
+Example:<br>"": I said I'm *not* going!
+Copy<br>To add notes to the chapter for the Proofreader of the Typesetter to read only, please use Double Hash: ##<br>
+as a legend.<br>
+Example:<br>
+## "조용히 해!" should be italicized to indicate it's whispered. It means "Be quiet!"<br>Use Triple Dots: ...<br>
+for trailing off or pauses in speech.<br>
+Don't use Ellipsis (…), it causes many issues during typesetting as not all fonts support it.<br>Example:<br>
+"": I was thinking maybe we could...<br>
+"": Go on...<br>For onomatopoeia that repeats, use a multiplication sign × to show repetition.<br>
+Example:<br>
+"": TAP ×3<br>For Phones and Chat Bubbles, please use the Curly Braces: {}<br>
+with not space between as a legend followed by a Colon.<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/narration.png" draggable="false">Narration.png<br>To add Footnotes to the chapter to be typeset in the final images, please use a single Hash: #<br>
+as a legend.<br>
+Example:<br>
+# TL/N: Joseon was a dynastic kingdom of Korea that existed for 505 years.<br>Please use a default font to type you text such as Calibri or Arial, and refrain from using uncommon fonts as they might tend to change characters to match the style but this can lean to conflicts with the fonts used in typesetting which will make the Typesetter or the Quality Checker work extra to undo these changes.<br>Name the chapter following the format (Chapter 00) upload it to the TL/PR Folder in the link pinned in the series Discord channel pins.<br>Send a message in the channel <a data-tooltip-position="top" aria-label="https://discord.com/channels/1049169739211096114/1093260748106506332" rel="noopener" class="external-link" href="https://discord.com/channels/1049169739211096114/1093260748106506332" target="_blank">🖊-tl-and-pr</a>) in the following format:<br>
+<br>{#channel-mention} / {chapter-number} / TL
+<br>to update the Progress of the series.<br>For Thoughts Bubbles, you can use the normal Parentheses: ()<br>
+with not space between as a legend followed by a Colon.<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/speech.png" draggable="false">Speech.png<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/shouting.png" draggable="false">Shouting.png<br>Example:<br>
+(): This is a Thoughts Bubble.<br>Example:<br>
+{}: This is a KakaoTalk chat bubble.<br>For Double/Triple Bubbles, please use the normal Double Quotes: ""<br>
+as a legend followed by a Colon for the first bubble, and double Forward Slash: //<br>
+for the second bubble.<br>Example:<br>
+"": This is the First Bubble.<br>
+//: This is the Second Bubble.<br>For Small Text at the edge of a bubble, please use the letters: ST<br>
+all caps as a legend followed by a Colon.<br>
+Example:<br>
+ST: This is a side text.<img src="https://scans.frostalev.tech/scans/system/system.html/lib/media/multi-bubble.png" draggable="false">Multi-Bubble.png<br>For Narration outside Boxes, please use the letters: OT<br>
+all caps as a legend followed by a Colon.<br>
+Example:<br>
+OT: This is an outer text.]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/staff/roles/translator/workflow.html</link><guid isPermaLink="false">Scans/System/Staff/Roles/Translator/Workflow.canvas</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Tue, 16 Jul 2024 19:38:00 GMT</pubDate><enclosure url="https://scans.frostalev.tech/scans/system/system.html/lib/media/narration.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;https://scans.frostalev.tech/scans/system/system.html/lib/media/narration.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Staff Duties]]></title><description><![CDATA[ 
+ <br>
+A staff may take on multiple roles (e.g., a Quality Checker can be Uploader), The key is to ensure that all these duties are covered to produce high-quality chapters efficiently and consistently.
+<br><br>
+<br>Provide high-quality raws.
+<br>Ensure raws are stitched in the correct format.
+<br>Ensure raws are denoised and are good fit for staff to work on.
+<br>Provide raws to the staff in a timely manner.
+<br><br><br>
+<br>Translate the original text from the source language to the target language
+<br>Maintain the original tone and style.
+<br>Provide cultural notes or explanations when necessary for the proofreader.
+<br>Collaborate with proofreader to clarify ambiguous passages.
+<br>Ensure the series glossary is up to date and in an orderly manner.
+<br><br><br>
+<br>Review translations for accuracy, consistency, and fluency.
+<br>Correct grammar, spelling, and punctuation errors.
+<br>Ensure proper use of idioms and colloquialisms in the target language.
+<br>Maintain consistent terminology and style throughout the series.
+<br>Collaborate with translators to resolve any issues or ambiguities.
+<br><br><br>
+<br>Remove original text from speech bubbles and sound effects.
+<br>Clean up any artifacts or marks from the raw images.
+<br>Redraw parts of the image obscured by text.
+<br>Prepare cleaned images for the typesetter.
+<br><br><br>
+<br>Insert translated text into speech bubbles.
+<br>Create stylized text for sound effects, moans and onomatopoeia.
+<br>Ensure text fits properly within bubbles (80%).
+<br>Match font styles to the tone and context of the dialogue.
+<br>Handle complex layouts and adjust panel composition if necessary.
+<br>Create TPLs, styles and presets for recurring elements.
+<br><br><br>
+<br>Review the final work before release.
+<br>Check for any missed translations, typos, or formatting issues.
+<br>Ensure consistency in cleaning, typesetting, and translation across pages.
+<br>Provide feedback to relevant team members for necessary corrections and skill improvement.
+<br><br><br>
+<br>Compile the finished scanlation into appropriate file formats (e.g., WEBP, JPG).
+<br>Upload the completed chapter to out site and the other platforms.
+<br>Ensure proper naming and categorization of the uploaded content.
+<br>Handle Free/Paid chapters availability.
+<br>Monitor and report on readership statistics if available.
+<br><br><br>
+<br>Create visually appealing logos | covers | titles for scanlated series.
+<br>Ensure designs are consistent with the original manga's style and tone
+<br>Create templates for recurring design elements (e.g., chapter title pages)
+<br>Deliver designs in PSD file format with well organized layers and easy to edit elements.
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/staff/staff-duties.html</link><guid isPermaLink="false">Scans/System/Staff/Staff Duties.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:18:09 GMT</pubDate></item><item><title><![CDATA[Staff Levels]]></title><description><![CDATA[ 
+ <br>
+Each staff member will undergo a standardized test for their specific role. The test scores will range from 1 to 100, providing a precise evaluation of their skills. This will directly inform task assignments and potentially affect pay rates, allowing for accurate allocation of work based on demonstrated abilities.
+<br><br>
+<br>Scores 1-20: Beginner
+<br>Scores 21-40: Novice
+<br>Scores 41-60: Intermediate
+<br>Scores 61-80: Advanced
+<br>Scores 81-100: Expert
+<br><br><br>
+<br>
+Language Proficiency (40 points)
+
+<br>Source language proficiency (20 points)
+<br>Target language proficiency (20 points)
+
+
+<br>
+Translation Accuracy (30 points)
+
+<br>Correct meaning conveyed (15 points)
+<br>Appropriate tone and style maintained (15 points)
+
+
+<br>
+Speed and Efficiency (15 points)
+
+<br>Time taken to translate a standardized text
+
+
+<br>
+Cultural Knowledge (15 points)
+
+<br>Understanding and adaptation of cultural references
+
+
+<br><br>LanguageProficiency = 35/40 → 0.875TranslationAccuracy = 25/30 → 0.833SpeedAndEfficiency = 12/15 → 0.8CulturalKnowledge = 13/15 → 0.867&nbsp;TotalScore = 85/100 → 0.85#Staff Translation Level: 85 (Expert)&nbsp;<br><br><br>
+<br>
+Error Detection (40 points)
+
+<br>Identifying grammatical errors (15 points)
+<br>Spotting spelling mistakes (15 points)
+<br>Recognizing inconsistencies in style or tone (10 points)
+
+
+<br>
+Error Correction (30 points)
+
+<br>Providing appropriate corrections for identified errors
+
+
+<br>
+Speed and Efficiency (15 points)
+
+<br>Time taken to proofread a standardized text
+
+
+<br>
+Style Guide Application (15 points)
+
+<br>Correct application of a given style guide
+
+
+<br><br>ErrorDetection = 36/40 → 0.9ErrorCorrection = 27/30 → 0.9SpeedAndEfficiency = 13/15 → 0.867StyleGuideApplication = 14/15 → 0.933&nbsp;TotalScore = 90/100 → 0.9#Staff Proofreading Level: 90 (Expert)&nbsp;<br><br><br>
+<br>
+Basic Cleaning Skills (30 points)
+
+<br>Removal of text from speech bubbles without deforming them (10 points)
+<br>Cleaning of sound effects and onomatopoeia (10 points)
+<br>General image clean-up (10 points)
+
+
+<br>
+Advanced Techniques (30 points)
+
+<br>Complex redraws (15 points)
+<br>Handling of difficult textures or patterns (15 points)
+
+
+<br>
+Speed and Efficiency (30 points)
+
+<br>Time taken to clean a standardized set of pages
+
+
+<br>
+Software Proficiency (10 points)
+
+<br>Efficient use of tools in image editing software
+
+
+<br><br>BasicCleaningSkills = 28/30 → 0.933AdvancedTechniques = 25/30 → 0.833SpeedAndEfficiency = 24/30 → 0.8SoftwareProficiency = 6/10 → 0.6&nbsp;TotalScore = 83/100 → 0.83#Staff Cleaning Level: 83 (Expert)&nbsp;<br><br><br>
+<br>Text Shaping and Bubble Fitting (30 points)
+<br>
+<br>Accurate text shaping to match bubble contours (10 points)
+<br>Avoiding common shaping mistakes (e.g., uneven spacing, awkward line breaks) (10 points)
+<br>Proper text sizing and scaling within bubbles (10 points)
+<br>
+<br>Style Matching and Consistency (20 points)
+<br>
+<br>Ability to match and maintain consistent typesetting styles (10 points)
+<br>Appropriate handling of emphasis, sound effects, and special text (10 points)
+<br>
+<br>Layout and Positioning (20 points)
+<br>
+<br>Proper text centering and alignment within bubbles (10 points)
+<br>Balancing text with images in complex layouts (10 points)
+<br>
+<br>Advanced Editing and Localization (10 points)
+<br>
+<br>Skillful panel edits to accommodate localized text (5 points)
+<br>Creative problem-solving for challenging typesetting scenarios (5 points)
+<br>
+<br>Software Proficiency (10 points)
+<br>
+<br>Efficient use of typesetting software tools and features
+<br>Familiarity with keyboard shortcuts and time-saving techniques
+<br>
+<br>Speed and Efficiency (10 points)
+<br>
+<br>Time taken to complete a standardized set of typesetting tasks
+<br><br>TextShapingAndBubbleFitting = 27/30 → 0.9StyleMatchingAndConsistency = 18/20 → 0.9LayoutAndPositioning = 18/20 → 0.9AdvancedEditingAndLocalization = 7/10 → 0.7SoftwareProficiency = 9/10 → 0.9SpeedAndEfficiency = 8/10 → 0.8&nbsp;TotalScore = 87/100 → 0.87#Staff Typesetting Level: 87 (Expert)&nbsp;<br><br><br>
+<br>Use standardized materials for each test to maintain consistency across evaluations.
+<br>Conduct tests periodically (e.g., every four months) to track skill progression.
+<br>Have roles heads grade the tests to ensure objective evaluation.
+<br>Provide detailed feedback to staff members along with their scores to aid in skill improvement.
+<br>
+while these tests provide valuable insights, they should be considered alongside real-world performance in day-to-day tasks for a comprehensive evaluation of a staff member's abilities.
+<br>
+Staff can ask for their levels to be reevaluated but they can ask for reevaluation once every 30 chapters, and then the respective role head will check the last five chapters and apply the rules above.
+]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/staff/staff-levels.html</link><guid isPermaLink="false">Scans/System/Staff/Staff Levels.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:56:28 GMT</pubDate></item><item><title><![CDATA[System]]></title><description><![CDATA[ 
+ <br>/]]></description><link>https://scans.frostalev.tech/scans/system/system.html/scans/system/system.html</link><guid isPermaLink="false">Scans/System/System.md</guid><dc:creator><![CDATA[FrostAlev]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:15:35 GMT</pubDate></item></channel></rss>
