@@ -14,20 +14,6 @@
     .ascii-line, .social-media { 
       visibility: hidden;
     }
-    #paypalButton {
-      margin-top: 1rem;
-    }
-    .pp-VWEVRCFVS25U2 {
-      font-family: "Perfect DOS", monospace !important;
-      background-color: #f1f1f1 !important;
-      color: #00a !important;
-      border: 2px solid #f1f1f1 !important;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .pp-VWEVRCFVS25U2:hover {
-      background-color: #00a !important;
-      color: #f1f1f1 !important;
-    }
   </style>
   <link rel="icon" href="https://frostalev.tech/f.png" type="image/x-icon">
 </head>
@@ -74,11 +60,14 @@
     </div>
     
     <!-- New PayPal button -->
-<div id="paypalButton" class="div-center">
-  <form action="https://www.paypal.com/ncp/payment/VWEVRCFVS25U2" method="post" target="_top">
-    <input class="pp-VWEVRCFVS25U2" type="submit" value="Subscribe Now" />
-  </form>
-</div>
+    <div id="paypalButton" style="margin-top: 20px; visibility: hidden;">
+      <style>.pp-VWEVRCFVS25U2{text-align:center;border:none;border-radius:1.5rem;min-width:11.625rem;padding:0 2rem;height:3.125rem;font-weight:bold;background-color:#000000;color:#ffffff;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1.125rem;line-height:1.5rem;cursor:pointer;}</style>
+      <form action="https://www.paypal.com/ncp/payment/VWEVRCFVS25U2" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+        <input class="pp-VWEVRCFVS25U2" type="submit" value="Subscribe Now" />
+        <img src="https://www.paypalobjects.com/images/Debit_Credit.svg" alt="cards" />
+        <section> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+      </form>
+    </div>
     
     <div class="text-center hidden">
       <a href="contact.html" id="contactLink">Contact Me</a>
@@ -128,10 +117,7 @@
   PatreonLink.setAttribute('target', '_blank');
 
   // ASCII art and title animation
-  console.log("Script started");
-
   function showASCIIArtAndTitle(callback) {
-    console.log("Showing ASCII art and title");
     const lines = document.querySelectorAll('.ascii-line');
     let index = 0;
     function showNextLine() {
@@ -141,15 +127,14 @@
         setTimeout(showNextLine, 100);
       } else {
         document.getElementById('title').style.visibility = 'visible';
-        console.log("ASCII art and title shown");
         if (callback) setTimeout(callback, 200);
       }
     }
     showNextLine();
   }
 
+  // Typewriter effect
   function typeWriter(txt, elementId, speed, callback) {
-    console.log(`Typing: ${elementId}`);
     let i = 0;
     const element = document.getElementById(elementId);
     function type() {
@@ -157,23 +142,25 @@
         element.innerHTML += txt.charAt(i);
         i++;
         setTimeout(type, speed);
-      } else {
-        console.log(`Finished typing: ${elementId}`);
-        if (callback) setTimeout(callback, 200);
+      } else if (callback) {
+        setTimeout(callback, 200);
       }
     }
     type();
   }
 
   function showSocialMediaIcons() {
-    console.log("Showing social media icons");
     const socialMediaIcons = document.querySelectorAll('#socialMedia .social-media');
     socialMediaIcons.forEach((icon, index) => {
       setTimeout(() => {
         icon.style.visibility = 'visible';
       }, index * 100);
     });
-    console.log("Social media icons shown");
+    
+    // Show PayPal button after social media icons
+    setTimeout(() => {
+      document.getElementById('paypalButton').style.visibility = 'visible';
+    }, socialMediaIcons.length * 100 + 100);
   }
 
   // Start the sequence
@@ -187,13 +174,10 @@
           cursor.textContent = "_";
           document.getElementById("typewriter3").appendChild(cursor);
           showSocialMediaIcons();
-          console.log("Animation sequence completed");
         });
       });
     });
   });
-
-  console.log("Script ended");
 </script>
 </body>
 </html>
