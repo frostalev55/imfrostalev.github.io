@@ -14,6 +14,23 @@
     .ascii-line, .social-media { 
       visibility: hidden;
     }
+    #paypalButton {
+      visibility: hidden;
+      margin-top: 1rem;
+    }
+    .pp-VWEVRCFVS25U2 {
+      font-family: "Perfect DOS", monospace !important;
+      background-color: #f1f1f1 !important;
+      color: #00a !important;
+      border: 2px solid #f1f1f1 !important;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1.2rem !important;
+      padding: 0.5rem 1rem !important;
+    }
+    .pp-VWEVRCFVS25U2:hover {
+      background-color: #00a !important;
+      color: #f1f1f1 !important;
+    }
   </style>
   <link rel="icon" href="https://frostalev.tech/f.png" type="image/x-icon">
 </head>
@@ -59,13 +76,9 @@
       </div>
     </div>
     
-    <!-- New PayPal button -->
-    <div id="paypalButton" style="margin-top: 20px; visibility: hidden;">
-      <style>.pp-VWEVRCFVS25U2{text-align:center;border:none;border-radius:1.5rem;min-width:11.625rem;padding:0 2rem;height:3.125rem;font-weight:bold;background-color:#000000;color:#ffffff;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1.125rem;line-height:1.5rem;cursor:pointer;}</style>
-      <form action="https://www.paypal.com/ncp/payment/VWEVRCFVS25U2" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+    <div id="paypalButton" class="div-center">
+      <form action="https://www.paypal.com/ncp/payment/VWEVRCFVS25U2" method="post" target="_top">
         <input class="pp-VWEVRCFVS25U2" type="submit" value="Subscribe Now" />
-        <img src="https://www.paypalobjects.com/images/Debit_Credit.svg" alt="cards" />
-        <section> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
       </form>
     </div>
     
@@ -151,16 +164,18 @@
 
   function showSocialMediaIcons() {
     const socialMediaIcons = document.querySelectorAll('#socialMedia .social-media');
+    let delay = 0;
     socialMediaIcons.forEach((icon, index) => {
       setTimeout(() => {
         icon.style.visibility = 'visible';
-      }, index * 100);
+      }, delay);
+      delay += 100;
     });
     
     // Show PayPal button after social media icons
     setTimeout(() => {
       document.getElementById('paypalButton').style.visibility = 'visible';
-    }, socialMediaIcons.length * 100 + 100);
+    }, delay + 100);
   }
 
   // Start the sequence
