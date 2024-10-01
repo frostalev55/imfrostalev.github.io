@@ -16,7 +16,7 @@
     }
     #paypalButton {
       visibility: hidden;
-      margin-top: 0.7rem;
+      margin-top: 1rem;
     }
     .pp-VWEVRCFVS25U2 {
       font-family: "Perfect DOS", monospace !important;
@@ -24,7 +24,7 @@
       color: #00a !important;
       border: 2px solid #f1f1f1 !important;
       transition: background-color 0.3s, color 0.3s;
-      font-size: 0.9rem !important;
+      font-size: 1.2rem !important;
       padding: 0.5rem 1rem !important;
     }
     .pp-VWEVRCFVS25U2:hover {
@@ -89,6 +89,9 @@
 </div>
 
 <script>
+  let isTypingFinished = false;
+  let currentTypewriterCallback = null;
+
   function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
@@ -116,8 +119,10 @@
     });
   } else {
     document.addEventListener('keydown', function(event) {
-      event.preventDefault();
-      window.location.href = 'contact.html';
+      if (isTypingFinished) {
+        event.preventDefault();
+        window.location.href = 'contact.html';
+      }
     });
   }
 
@@ -154,12 +159,42 @@
       if (i < txt.length) {
         element.innerHTML += txt.charAt(i);
         i++;
-        setTimeout(type, speed);
-      } else if (callback) {
-        setTimeout(callback, 200);
+        currentTypewriterCallback = setTimeout(type, speed);
+      } else {
+        currentTypewriterCallback = null;
+        if (callback) setTimeout(callback, 200);
       }
     }
     type();
+  }
+
+  function finishTypewriter() {
+    if (currentTypewriterCallback) {
+      clearTimeout(currentTypewriterCallback);
+      currentTypewriterCallback = null;
+    }
+    
+    const elements = ['typewriter', 'typewriter2', 'typewriter3'];
+    const texts = [
+      "Welcome! I'm FrostAlev. I'm excited to collaborate and explore new ventures with you.",
+      "Got a groundbreaking idea or a challenging project? I'm all ears! Let's turn your vision into reality.",
+      "Press any key to get in touch "
+    ];
+    
+    elements.forEach((elementId, index) => {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.innerHTML = texts[index];
+      }
+    });
+    
+    document.getElementById('bulletList').style.display = 'block';
+    const cursor = document.createElement("span");
+    cursor.className = "blink";
+    cursor.textContent = "_";
+    document.getElementById("typewriter3").appendChild(cursor);
+    showSocialMediaIcons();
+    isTypingFinished = true;
   }
 
   function showSocialMediaIcons() {
@@ -178,6 +213,13 @@
     }, delay + 100);
   }
 
+  // Click event to finish typing immediately
+  document.addEventListener('click', function() {
+    if (!isTypingFinished) {
+      finishTypewriter();
+    }
+  });
+
   // Start the sequence
   showASCIIArtAndTitle(function() {
     typeWriter("Welcome! I'm FrostAlev. I'm excited to collaborate and explore new ventures with you.", "typewriter", 50, function() {
@@ -189,6 +231,7 @@
           cursor.textContent = "_";
           document.getElementById("typewriter3").appendChild(cursor);
           showSocialMediaIcons();
+          isTypingFinished = true;
         });
       });
     });
