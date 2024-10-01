@@ -14,6 +14,20 @@
     .ascii-line, .social-media { 
       visibility: hidden;
     }
+    #paypalButton {
+      margin-top: 1rem;
+    }
+    .pp-VWEVRCFVS25U2 {
+      font-family: "Perfect DOS", monospace !important;
+      background-color: #f1f1f1 !important;
+      color: #00a !important;
+      border: 2px solid #f1f1f1 !important;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .pp-VWEVRCFVS25U2:hover {
+      background-color: #00a !important;
+      color: #f1f1f1 !important;
+    }
   </style>
   <link rel="icon" href="https://frostalev.tech/f.png" type="image/x-icon">
 </head>
@@ -58,6 +72,14 @@
         </a>
       </div>
     </div>
+    
+    <!-- New PayPal button -->
+<div id="paypalButton" class="div-center">
+  <form action="https://www.paypal.com/ncp/payment/VWEVRCFVS25U2" method="post" target="_top">
+    <input class="pp-VWEVRCFVS25U2" type="submit" value="Subscribe Now" />
+  </form>
+</div>
+    
     <div class="text-center hidden">
       <a href="contact.html" id="contactLink">Contact Me</a>
     </div>
@@ -106,7 +128,10 @@
   PatreonLink.setAttribute('target', '_blank');
 
   // ASCII art and title animation
+  console.log("Script started");
+
   function showASCIIArtAndTitle(callback) {
+    console.log("Showing ASCII art and title");
     const lines = document.querySelectorAll('.ascii-line');
     let index = 0;
     function showNextLine() {
@@ -116,14 +141,15 @@
         setTimeout(showNextLine, 100);
       } else {
         document.getElementById('title').style.visibility = 'visible';
+        console.log("ASCII art and title shown");
         if (callback) setTimeout(callback, 200);
       }
     }
     showNextLine();
   }
 
-  // Typewriter effect
   function typeWriter(txt, elementId, speed, callback) {
+    console.log(`Typing: ${elementId}`);
     let i = 0;
     const element = document.getElementById(elementId);
     function type() {
@@ -131,20 +157,23 @@
         element.innerHTML += txt.charAt(i);
         i++;
         setTimeout(type, speed);
-      } else if (callback) {
-        setTimeout(callback, 200);
+      } else {
+        console.log(`Finished typing: ${elementId}`);
+        if (callback) setTimeout(callback, 200);
       }
     }
     type();
   }
 
   function showSocialMediaIcons() {
+    console.log("Showing social media icons");
     const socialMediaIcons = document.querySelectorAll('#socialMedia .social-media');
     socialMediaIcons.forEach((icon, index) => {
       setTimeout(() => {
         icon.style.visibility = 'visible';
       }, index * 100);
     });
+    console.log("Social media icons shown");
   }
 
   // Start the sequence
@@ -158,10 +187,13 @@
           cursor.textContent = "_";
           document.getElementById("typewriter3").appendChild(cursor);
           showSocialMediaIcons();
+          console.log("Animation sequence completed");
         });
       });
     });
   });
+
+  console.log("Script ended");
 </script>
 </body>
 </html>
