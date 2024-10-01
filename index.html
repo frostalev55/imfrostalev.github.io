@@ -90,11 +90,11 @@
 
 <script>
   let isTypingFinished = false;
-  let currentTypewriterCallback = null;
+let currentTypewriterCallback = null;
 
-  function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
   if (isMobile()) {
     const mobileOverlay = document.getElementById('mobileOverlay');
@@ -136,106 +136,106 @@
 
   // ASCII art and title animation
   function showASCIIArtAndTitle(callback) {
-    const lines = document.querySelectorAll('.ascii-line');
-    let index = 0;
-    function showNextLine() {
-      if (index < lines.length) {
-        lines[index].style.visibility = 'visible';
-        index++;
-        setTimeout(showNextLine, 100);
-      } else {
-        document.getElementById('title').style.visibility = 'visible';
-        if (callback) setTimeout(callback, 200);
-      }
+  const lines = document.querySelectorAll('.ascii-line');
+  let index = 0;
+  function showNextLine() {
+    if (index < lines.length) {
+      lines[index].style.visibility = 'visible';
+      index++;
+      setTimeout(showNextLine, 100);
+    } else {
+      document.getElementById('title').style.visibility = 'visible';
+      if (callback) setTimeout(callback, 200);
     }
-    showNextLine();
   }
+  showNextLine();
+}
 
-  // Typewriter effect
-  function typeWriter(txt, elementId, speed, callback) {
-    let i = 0;
-    const element = document.getElementById(elementId);
-    function type() {
-      if (i < txt.length) {
-        element.innerHTML += txt.charAt(i);
-        i++;
-        currentTypewriterCallback = setTimeout(type, speed);
-      } else {
-        currentTypewriterCallback = null;
-        if (callback) setTimeout(callback, 200);
-      }
-    }
-    type();
-  }
-
-  function finishTypewriter() {
-    if (currentTypewriterCallback) {
-      clearTimeout(currentTypewriterCallback);
+function typeWriter(txt, elementId, speed, callback) {
+  let i = 0;
+  const element = document.getElementById(elementId);
+  element.innerHTML = ''; // Clear the element before typing
+  function type() {
+    if (i < txt.length) {
+      element.innerHTML += txt.charAt(i);
+      i++;
+      currentTypewriterCallback = setTimeout(type, speed);
+    } else {
       currentTypewriterCallback = null;
+      if (callback) setTimeout(callback, 200);
     }
-    
-    const elements = ['typewriter', 'typewriter2', 'typewriter3'];
-    const texts = [
-      "Welcome! I'm FrostAlev. I'm excited to collaborate and explore new ventures with you.",
-      "Got a groundbreaking idea or a challenging project? I'm all ears! Let's turn your vision into reality.",
-      "Press any key to get in touch "
-    ];
-    
-    elements.forEach((elementId, index) => {
-      const element = document.getElementById(elementId);
-      if (element) {
-        element.innerHTML = texts[index];
-      }
-    });
-    
-    document.getElementById('bulletList').style.display = 'block';
-    const cursor = document.createElement("span");
-    cursor.className = "blink";
-    cursor.textContent = "_";
-    document.getElementById("typewriter3").appendChild(cursor);
-    showSocialMediaIcons();
-    isTypingFinished = true;
   }
+  type();
+}
 
-  function showSocialMediaIcons() {
-    const socialMediaIcons = document.querySelectorAll('#socialMedia .social-media');
-    let delay = 0;
-    socialMediaIcons.forEach((icon, index) => {
-      setTimeout(() => {
-        icon.style.visibility = 'visible';
-      }, delay);
-      delay += 100;
-    });
-    
-    // Show PayPal button after social media icons
-    setTimeout(() => {
-      document.getElementById('paypalButton').style.visibility = 'visible';
-    }, delay + 100);
+function finishTypewriter() {
+  if (currentTypewriterCallback) {
+    clearTimeout(currentTypewriterCallback);
+    currentTypewriterCallback = null;
   }
-
-  // Click event to finish typing immediately
-  document.addEventListener('click', function() {
-    if (!isTypingFinished) {
-      finishTypewriter();
+  
+  const elements = ['typewriter', 'typewriter2', 'typewriter3'];
+  const texts = [
+    "Welcome! I'm FrostAlev. I'm excited to collaborate and explore new ventures with you.",
+    "Got a groundbreaking idea or a challenging project? I'm all ears! Let's turn your vision into reality.",
+    "Press any key to get in touch "
+  ];
+  
+  elements.forEach((elementId, index) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.innerHTML = texts[index];
     }
   });
+  
+  document.getElementById('bulletList').style.display = 'block';
+  const cursor = document.createElement("span");
+  cursor.className = "blink";
+  cursor.textContent = "_";
+  document.getElementById("typewriter3").appendChild(cursor);
+  showSocialMediaIcons();
+  isTypingFinished = true;
+}
 
-  // Start the sequence
-  showASCIIArtAndTitle(function() {
-    typeWriter("Welcome! I'm FrostAlev. I'm excited to collaborate and explore new ventures with you.", "typewriter", 50, function() {
-      document.getElementById('bulletList').style.display = 'block';
-      typeWriter("Got a groundbreaking idea or a challenging project? I'm all ears! Let's turn your vision into reality.", "typewriter2", 50, function() {
-        typeWriter("Press any key to get in touch ", "typewriter3", 50, function() {
-          const cursor = document.createElement("span");
-          cursor.className = "blink";
-          cursor.textContent = "_";
-          document.getElementById("typewriter3").appendChild(cursor);
-          showSocialMediaIcons();
-          isTypingFinished = true;
-        });
+function showSocialMediaIcons() {
+  const socialMediaIcons = document.querySelectorAll('#socialMedia .social-media');
+  let delay = 0;
+  socialMediaIcons.forEach((icon, index) => {
+    setTimeout(() => {
+      icon.style.visibility = 'visible';
+    }, delay);
+    delay += 100;
+  });
+  
+  // Show PayPal button after social media icons
+  setTimeout(() => {
+    document.getElementById('paypalButton').style.visibility = 'visible';
+  }, delay + 100);
+}
+
+// Click event to finish typing immediately
+document.addEventListener('click', function() {
+  if (!isTypingFinished) {
+    finishTypewriter();
+  }
+});
+
+// Start the sequence
+showASCIIArtAndTitle(function() {
+  typeWriter("Welcome! I'm FrostAlev. I'm excited to collaborate and explore new ventures with you.", "typewriter", 50, function() {
+    document.getElementById('bulletList').style.display = 'block';
+    typeWriter("Got a groundbreaking idea or a challenging project? I'm all ears! Let's turn your vision into reality.", "typewriter2", 50, function() {
+      typeWriter("Press any key to get in touch ", "typewriter3", 50, function() {
+        const cursor = document.createElement("span");
+        cursor.className = "blink";
+        cursor.textContent = "_";
+        document.getElementById("typewriter3").appendChild(cursor);
+        showSocialMediaIcons();
+        isTypingFinished = true;
       });
     });
   });
+});
 </script>
 </body>
 </html>
