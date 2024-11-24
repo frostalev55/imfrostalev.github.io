@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Personal Life]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Personal Life</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 24 Nov 2024 15:01:57 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 24 Nov 2024 15:01:56 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[دليل مفصل لتثبيت Docker وبناء وتشغيل ملف Docker لاستخدام Apache Spark™]]></title><description><![CDATA[ 
+ <br><br>باعتبار أنّا جميعا نستخدم Windows:<br>
+<br>نزل [Docker Desktop](<a data-tooltip-position="top" aria-label="https://docs.docker.com/desktop/setup/install/windows-install/" rel="noopener nofollow" class="external-link" href="https://docs.docker.com/desktop/setup/install/windows-install/" target="_blank">Windows | Docker Docs</a>) من الموقع الرسمي.
+<br>تأكد من وجود WSL [Windows Subsystem for Linux] على جهازك:
+
+<br>افتح الـTerminal\CMD\PowerShell
+<br>أدخل الأمر التالي: wsl
+<br>إن كان الرد كالتالي <img alt="Pasted image 20241124160111.png" src="docker\src\pasted-image-20241124160111.png"> فتابع من خطوة تثبيت Docker
+<br>تأكد من تفعيل WSL 2 بالخطوات التالية:
+
+<br>ابحث عن [turn windows features on or off]<img alt="Pasted image 20241124160515.png" src="docker\src\pasted-image-20241124160515.png">
+<br>تأكد من تفعيل الخيار التالي:<br>
+<img alt="Pasted image 20241124160719.png" src="docker\src\pasted-image-20241124160719.png">
+<br>بعدها قم بإعادة تشغيل الكمبيوتر
+
+
+
+
+<br>شغل ملف التثبيت الذي نزلته:<img alt="Pasted image 20241124162043.png" src="docker\src\pasted-image-20241124162043.png"><img alt="Pasted image 20241124162112.png" src="docker\src\pasted-image-20241124162112.png"><img alt="Pasted image 20241124162125.png" src="docker\src\pasted-image-20241124162125.png"><img alt="Pasted image 20241124162145.png" src="docker\src\pasted-image-20241124162145.png">
+<br>اغلق نفذة البرنامج التالية:<img alt="Pasted image 20241124162238.png" src="docker\src\pasted-image-20241124162238.png">
+<br>افتح VS Code وأنشئ فولدر جديد:<br>
+<img alt="Pasted image 20241124162326.png" src="docker\src\pasted-image-20241124162326.png">
+<br>أنشئ ملفًا وسمه [requirements.txt] وانقل إليه النص التالي:
+<br>   pyspark==3.5.0
+   jupyter==1.0.0
+   notebook==7.0.6
+   pandas&gt;=2.1.0
+   numpy&gt;=1.24.0
+   matplotlib&gt;=3.7.0
+   seaborn&gt;=0.12.0
+<br>
+<br>أنشئ ملفًا وسمه [dockerfile] وانقل إليه النص التالي:
+<br># Use Python 3.9 as base image
+FROM python:3.9-slim
+
+# Install Java and required tools
+RUN apt-get update &amp;&amp; \
+    apt-get install -y --no-install-recommends \
+        openjdk-17-jdk-headless \
+        wget \
+        procps \
+    &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+    
+# Set environment variables for Java and PySpark
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+ENV PATH=$JAVA_HOME/bin:$PATH
+ENV PYSPARK_PYTHON=python3
+ENV PYSPARK_DRIVER_PYTHON=jupyter
+ENV PYSPARK_DRIVER_PYTHON_OPTS="notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root"
+
+# Install Python packages
+WORKDIR /workspace
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Verify Java installation and environment variables
+RUN java -version &amp;&amp; \
+    echo "JAVA_HOME=$JAVA_HOME" &amp;&amp; \
+    echo "PATH=$PATH"
+
+# Expose Jupyter port
+EXPOSE 8888
+
+# Start Jupyter Notebook
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
+<br><img alt="Pasted image 20241124163228.png" src="docker\src\pasted-image-20241124163228.png"><br>
+8. افتح الـTerminal بداخل VS Code [CTRL + J]<br>
+9. أدخل الأمر التالي وانتظر انتهاء بناء ملف الـDocker:<br>docker build -t pyspark .   
+<br><img alt="Pasted image 20241124163543.png" src="docker\src\pasted-image-20241124163543.png"><br>
+10. أدخل الأمر التالي وانتظر انتهاء تشغيل الـContainer:<br>docker run -it -p 8888:8888 -v ${PWD}:/workspace pyspark
+<br><img alt="Pasted image 20241124163657.png" src="docker\src\pasted-image-20241124163657.png"><br>
+11. ستجد رابطا في النهاية بادئته:<br>http://127.0.0.1:8888/?token=
+<br>
+<br>انسخ الرابط وافتحه في متصفح الويب على جهازك.
+<br>ستظهر لك نافذة Jupyter عادية يمكنك التفاعل معها كالعادة:<br>
+<img alt="Pasted image 20241124164047.png" src="docker\src\pasted-image-20241124164047.png">
+<br>تأكد من أن كل شيء يعمل بشكل صحيح من خلال إنشاء Notebook جديدة وتجربة الأوامر التالية فيها:
+<br>from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+	.appName("PySpark Test") \ 
+	.getOrCreate()
+
+data = [("Alice", 25), ("Bob", 30), ("Charlie", 35)] 
+df = spark.createDataFrame(data, ["Name", "Age"])
+
+df.show()
+<br><img alt="Pasted image 20241124164412.png" src="docker\src\pasted-image-20241124164412.png"><br>
+15. لإضافة أية ملفات لاستخدامها لاحقا كملفات الـCSV على سبيل المثال، يمكنك بكل بساطة نسخها للفولدر على VS Code وستظهر تلقائيا في نافذة Jupyter:<br>
+<img alt="Pasted image 20241124164738.png" src="docker\src\pasted-image-20241124164738.png"><br>
+كما يمكنك فتح الـNotebooks او التفاعل مع الملفات الأخرى داخل أي IDE تستخدمه كيفما تشاء:<img alt="Pasted image 20241124164904.png" src="docker\src\pasted-image-20241124164904.png">]]></description><link>docker\دليل-مفصل-لتثبيت-docker-وبناء-وتشغيل-ملف-docker-لاستخدام-apache-spark™.html</link><guid isPermaLink="false">Docker/دليل مفصل لتثبيت Docker وبناء وتشغيل ملف Docker لاستخدام Apache Spark™.md</guid><pubDate>Sun, 24 Nov 2024 14:49:06 GMT</pubDate><enclosure url="docker\src\pasted-image-20241124160111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;docker\src\pasted-image-20241124160111.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
