@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[FrostAlev]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>FrostAlev</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 15 Feb 2025 04:55:09 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 15 Feb 2025 04:55:08 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Finance Bot]]></title><description><![CDATA[<a class="tag" href="?query=tag:Solo-Leveling" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Solo-Leveling</a> <a class="tag" href="?query=tag:Solo-Leveling" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Solo-Leveling</a> <a class="tag" href="?query=tag:Solo-Leveling" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Solo-Leveling</a> <a class="tag" href="?query=tag:substitutes" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#substitutes</a> <a class="tag" href="?query=tag:substitutes" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#substitutes</a> <a class="tag" href="?query=tag:submissions" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#submissions</a> 
+ <br><br><br><br>$series {subcommand}<br>
+<br>
+add -&gt; use this subcommand to add a new series to the database.<br>
+$series add {#channel-mention} (TL) (PR) (CL) (TS) (QC) (SR)<br>
+example: $series add #Solo-Leveling 4 2 1.5 1.5 2<br>
+<img alt="Pasted image 20250215025229.png" src="pasted-image-20250215025229.png">
+
+<br>
+edit -&gt; use this subcommand to edit the points of an existing series in the database.<br>
+$series edit {#channel-mention} (TL) (PR) (CL) (TS) (QC) (SR)<br>
+example: `$series edit <a href=".?query=tag:Solo-Leveling" class="tag" target="_blank" rel="noopener nofollow">#Solo-Leveling</a> 5 3 2 2 2<br>
+<img alt="Pasted image 20250215025306.png" src="pasted-image-20250215025306.png">
+
+<br>
+staff -&gt; use this subcommand to assign members to a series &amp; if members were already assigned to a series, it will update them.<br>
+$series staff {#channel-mention} (@TL) (@PR) (@CL) (@TS) (@QC) example: $series staff <a href=".?query=tag:Solo-Leveling" class="tag" target="_blank" rel="noopener nofollow">#Solo-Leveling</a> @user1 @user2 @user3 @user3 @user4<br>
+<img alt="Pasted image 20250215025611.png" src="pasted-image-20250215025611.png">
+
+<br>
+delete -&gt; use this subcommand to delete an existing series from the database.<br>
+$series delete {#channel-mention} example: $series dedlete <a href=".?query=tag:Solo-Leveling" class="tag" target="_blank" rel="noopener nofollow">#Solo-Leveling</a>
+
+<br>
+substitute -&gt; use this command to request temporary/permanent staff to work on a chapter/s in a certain series.<br>
+Usage:<br>
+Submit a request in the <a href=".?query=tag:substitutes" class="tag" target="_blank" rel="noopener nofollow">#substitutes</a> channel with the following format:<br>
+{#channel-mention} (staff_role/s) {chapters_count} {temp/perma}<br>
+example: #Solo-Leveling Translator
+jobs:<br>
+Translation | Proofreading | Cleaning | Typesetting | Quality Checking
+Requirements:
+
+<br>The submission must be in the <a href=".?query=tag:substitutes" class="tag" target="_blank" rel="noopener nofollow">#substitutes</a> channel.
+<br>Invoker must have Manager role.<br>
+<img alt="Pasted image 20250215045405.png" src="pasted-image-20250215045405.png"><br>
+<img alt="Pasted image 20250215045452.png" src="pasted-image-20250215045452.png">
+
+
+<br><br>$user/u {subcommand}<br>
+<br>
+add/a -&gt; use this subcommand to add a new member to the database.<br>
+$user add {@member}<br>
+example: $user add @user<br>
+example: $u add @user<br>
+<img alt="Pasted image 20250215030353.png" src="pasted-image-20250215030353.png">
+
+<br>
+reward/r -&gt; use this subcommand to reward a member by adding points.<br>
+$user reward {@member} (reward) "reason"<br>
+example: $user reward @user 2<br>
+example: $u r @user 2<br>
+<img alt="Pasted image 20250215030635.png" src="pasted-image-20250215030635.png">
+
+<br>
+punish/p -&gt; use this subcommand to punish a member by subtracting points.<br>
+$user punish {@member} (reward) "reason"<br>
+example: $user punish @user 2<br>
+example: $u p @user 2<br>
+<img alt="Pasted image 20250215030834.png" src="pasted-image-20250215030834.png">
+
+<br>
+$leaderboard/lb -&gt; use this command to show the month's Leaderboard.<br>
+$leaderboard {number of desired ranks}<br>
+$leaderboard 3<br>
+$leaderboard<br>
+$lb<br>
+example: $lb<br>
+<img alt="Pasted image 20250215041246.png" src="pasted-image-20250215041246.png">
+
+<br>
+$point_history/ph -&gt; use this command to show a list of the reward/punish history of a user.<br>
+$point_history {@user}<br>
+$ph @user ph`<br>
+<img alt="Pasted image 20250215042549.png" src="pasted-image-20250215042549.png">
+
+<br>
+$reset_points -&gt; use this command to reset all users' points and submissions.
+
+<br>the bot will send a CSV file with the points before the reset.
+<br>the bot will also show a list of the users and their total points.
+<br>only users with the role Administration can use this command.<br>
+example: $reset_points<br>
+<img alt="Pasted image 20250215043013.png" src="pasted-image-20250215043013.png">
+
+
+<br><br><br><br>
+<br>
+$series_info/info/si -&gt; use this command to show the info card of a series:
+
+<br>assigned members
+<br>pay rates
+
+$series_info {#channel-mention}<br>
+example: $series_info #Solo-Leveling
+
+<br>you can skip the channel mention if you're in the desired series channel already
+<br>the total cost field only appear if the invoker is an admin<br>
+<img alt="Pasted image 20250215032444.png" src="pasted-image-20250215032444.png">
+
+
+<br><br>
+<br>
+$status/s -&gt; use this command to show the user's status card.<br>
+$status {@user-mention}<br>
+$status @user<br>
+example: $s @user<br>
+you can skip the user mention if you wanna see your own status<br>
+<img alt="Pasted image 20250215035105.png" src="pasted-image-20250215035105.png">
+
+<br>
+$user_chapters/uc -&gt; use this command to list the user's submitted chapters.<br>
+$user_chapters {@user-mention}<br>
+$user_chapters @user<br>
+$uc @user<br>
+$uc<br>
+example: $uc @user<br>
+you can skip the user mention if you wanna see your own chapters<br>
+<img alt="Pasted image 20250215040629.png" src="pasted-image-20250215040629.png">
+
+<br>
+$leaderboard/lb -&gt; use this command to show the month's Leaderboard.<br>
+$leaderboard<br>
+$lb<br>
+example: $lb<br>
+<img alt="Pasted image 20250215041440.png" src="pasted-image-20250215041440.png"><br>
+the staff variant of the leaderboard command only shows info relevant to the invoker
+
+<br><br>Usage:<br>
+Submit your work in the <a href=".?query=tag:submissions" class="tag" target="_blank" rel="noopener nofollow">#submissions</a> channel with the following format:<br>
+{#channel-mention} (chapter number) (job)<br>
+example: #Solo-Leveling 23 Typesetting<br><img alt="Pasted image 20250215044202.png" src="pasted-image-20250215044202.png"><br>
+<img alt="Pasted image 20250215044226.png" src="pasted-image-20250215044226.png"><br><br><br><br>
+<br>
+Points Ledger<br>
+<img alt="Pasted image 20250215050725.png" src="pasted-image-20250215050725.png">
+
+<br>
+Overall Points<br>
+<img alt="Pasted image 20250215050957.png" src="pasted-image-20250215050957.png">
+
+<br><br>
+<br>
+Tasks Levels Sheet<br>
+Fill in few info about the series and the sheet will calculate the level and pay rate automatically<br>
+<img alt="Pasted image 20250215061944.png" src="pasted-image-20250215061944.png">
+
+<br>
+Series Overview Sheet<br>
+Automatically shows all info about all series in one worksheet ready to copy over to the bot<br>
+<img alt="Pasted image 20250215061327.png" src="pasted-image-20250215061327.png">
+
+<br>
+Statistics Sheet<br>
+Automatically calculates the operation cost and projected costs based on all the data in the other worksheets and algorithms<br>
+<img alt="Pasted image 20250215061748.png" src="pasted-image-20250215061748.png">
+
+<br><br><br>
+<br>
+Record your progress<br>
+#channel-name / chapter-number/s / step / comments, links, mentions, etc...<br>
+Steps are: raw, tl, pr, cl, ts, qc<br>
+<img alt="Pasted image 20250215054312.png" src="pasted-image-20250215054312.png"><img alt="Pasted image 20250215054349.png" src="pasted-image-20250215054349.png">
+
+<br>
+%undo/u -&gt; unregisters a chapter if sent by mistake.<br>
+#channel-name / chapter-number / step<br>
+<img alt="Pasted image 20250215055235.png" src="pasted-image-20250215055235.png">
+
+<br>
+%prog/p -&gt; Show the progress report for a series.<br>
+you can skip the channel mention to get the progress of the current channel.<br>
+<img alt="Pasted image 20250215054644.png" src="pasted-image-20250215054644.png"><img alt="Pasted image 20250215054904.png" src="pasted-image-20250215054904.png">
+
+<br>
+%overview/o -&gt; Show the progress report for all series in a category. (Managers only)<br>
+<img alt="Pasted image 20250215055538.png" src="pasted-image-20250215055538.png">
+
+<br>
+/mention -&gt; Use this function to mention user/s based two or more roles they have without mass pinging the whole role holders.<br>
+Usage:<br>
+/mentions {include_role/s} {exclude_role/s} {hiatus_status}
+Use Case:<br>
+Task: mention the translator of solo-leveling who's not on hiatus without knowing him.<br>
+Basic Solution 1: ping the @solo-leveling role and ask who's the translator.<br>
+Basic Solution 2: ping the @KTL role in the #Solo-Leveling channel and ask who's the current translator.<br>
+mention command:<img alt="Pasted image 20250215060551.png" src="pasted-image-20250215060551.png"><br>
+<img alt="Pasted image 20250215060609.png" src="pasted-image-20250215060609.png">
+
+<br>
+%arrange -&gt; use to arrange series channels in a given category based on several methods default being name length<br>
+<img alt="Pasted image 20250215063100.png" src="pasted-image-20250215063100.png">
+
+<br><br><br>
+<br>Create a new channel for a new series<br>
+/create_channel {channel_name} {release_day} {release_time} {raw_source} {priority} {korean_name}<br>
+<img alt="Pasted image 20250215063304.png" src="pasted-image-20250215063304.png"><br>
+the bot then creates a new channel in a certain category based on the series name and day of release given in the command, and adds all the miscellaneous info in the Channel Topic and the creates a role with the same name of the channel and configures the permissions for both the role and the channel. then creates a new folder in a given Google Drive account with the following scheme:<br>
+<img alt="Pasted image 20250215063640.png" src="pasted-image-20250215063640.png"><br>
+then pins that google drive link in the series discord channel<br>
+<img alt="Pasted image 20250215063826.png" src="pasted-image-20250215063826.png">
+]]></description><link>scanlation-bots.html</link><guid isPermaLink="false">Scanlation Bots.md</guid><pubDate>Sat, 15 Feb 2025 04:40:22 GMT</pubDate><enclosure url="pasted-image-20250215025229.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;pasted-image-20250215025229.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
